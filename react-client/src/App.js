@@ -50,16 +50,16 @@ const App = () => {
     }
  
     {
-      (isSessionLoading || isUserLoading) && <p className='home'>Loading...</p>
+      (isSessionLoading || isUserLoading) && <p className='home text-gradient'>Loading...</p>
     }
  
     {!isUserLoading && isAuthenticated &&
       (
         <div class="home">
-            <h1>PHP Sample App</h1>
-            <button onClick={signIn}>Validate Session</button>
-            <button onClick={handleLogout}>Logout</button>
-            <h2>{data}</h2>
+            <h1 className='text-gradient'>Descope Laravel Sample App</h1>
+            <button onClick={signIn} className='text-gradient'>Validate Session</button>
+            <button onClick={handleLogout} className='text-gradient'>Logout</button>
+            <h2 className='text-gradient'>{data}</h2>
         </div>
       )
     }
