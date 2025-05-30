@@ -24,6 +24,8 @@ cd server
 composer run dev
 ```
 
+In App.js, make sure to also change the URL in the fetch request to match the URL of your server.
+
 ## Included Server Endpoints
 These endpoints have been built already for the sample app, used for session validation and some basic management functions
 - `/verify`: used for session management, validates the user's JWT by using their session token
