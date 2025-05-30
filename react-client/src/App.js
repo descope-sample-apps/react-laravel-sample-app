@@ -16,7 +16,7 @@ const App = () => {
     const sessionToken = getSessionToken();
  
     try {
-      fetch('https://react-laravel-sample-app-main-5zjdeg.laravel.cloud/verify', {
+      fetch('YOUR_BACKEND_URL/verify', {
         method: 'GET',
         headers: {
           Accept: '*/*',
