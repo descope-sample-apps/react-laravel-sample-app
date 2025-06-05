@@ -26,13 +26,16 @@ composer run dev
 
 In App.js, make sure to also change the URL in the fetch request to match the URL of your server.
 
+## Hosting the Application
+The backend can be hosted on [Laravel Cloud](https://cloud.laravel.com/) which is an easy way to deploy Laravel applications because it is preconfigured to work with Laravel projects. 
+
 ## Included Server Endpoints
 These endpoints have been built already for the sample app, used for session validation and some basic management functions
 - `/verify`: used for session management, validates the user's JWT by using their session token
 - `/create`: used for user management, can create a new user in the project (Requires Management Key)
 - `/delete`: used for user management, deletes an existing user in the project (Requires Management Key)
 
-### Additional Resources
+## Additional Resources
 Read more about setting up the SDK [here](https://docs.descope.com/getting-started/php) and read more about available management functions [here](https://docs.descope.com/management). You can also view the Github repository of the [PHP SDK](https://github.com/descope/descope-php) for more information.
 
 
